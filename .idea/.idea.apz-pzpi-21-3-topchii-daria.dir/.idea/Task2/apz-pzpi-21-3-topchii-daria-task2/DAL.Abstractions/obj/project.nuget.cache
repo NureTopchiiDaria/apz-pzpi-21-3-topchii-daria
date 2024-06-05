@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "dgSpecHash": "3c2kuR4cdv5D1n8whgaBUQlq2HDhzP0KDoHaL947+m0vuGaplUpRJ6Zvm5OPRazc5ya/RRau5ZOcc1WQTw0fvA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Farexy\\Documents\\GitHub\\dotnet-project\\DAL.Abstractions\\DAL.Abstractions.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Farexy\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.29\\microsoft.aspnetcore.authorization.6.0.29.nupkg.sha512",
+    "C:\\Users\\Farexy\\.nuget\\packages\\microsoft.aspnetcore.metadata\\6.0.29\\microsoft.aspnetcore.metadata.6.0.29.nupkg.sha512",
+    "C:\\Users\\Farexy\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\Farexy\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.4\\microsoft.extensions.logging.abstractions.6.0.4.nupkg.sha512",
+    "C:\\Users\\Farexy\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "C:\\Users\\Farexy\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\Farexy\\.nuget\\packages\\nettopologysuite\\2.3.0\\nettopologysuite.2.3.0.nupkg.sha512",
+    "C:\\Users\\Farexy\\.nuget\\packages\\stylecop.analyzers\\1.1.118\\stylecop.analyzers.1.1.118.nupkg.sha512",
+    "C:\\Users\\Farexy\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
+    "C:\\Users\\Farexy\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\Farexy\\.nuget\\packages\\text.analyzers\\3.3.3\\text.analyzers.3.3.3.nupkg.sha512"
+  ],
+  "logs": []
+}

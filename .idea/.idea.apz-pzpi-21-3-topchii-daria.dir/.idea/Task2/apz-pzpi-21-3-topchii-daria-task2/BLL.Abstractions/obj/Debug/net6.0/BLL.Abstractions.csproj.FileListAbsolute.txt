@@ -1,0 +1,15 @@
+C:\Users\Farexy\Documents\GitHub\dotnet-project\BLL.Abstractions\bin\Debug\net6.0\BLL.Abstractions.deps.json
+C:\Users\Farexy\Documents\GitHub\dotnet-project\BLL.Abstractions\bin\Debug\net6.0\BLL.Abstractions.dll
+C:\Users\Farexy\Documents\GitHub\dotnet-project\BLL.Abstractions\bin\Debug\net6.0\BLL.Abstractions.pdb
+C:\Users\Farexy\Documents\GitHub\dotnet-project\BLL.Abstractions\bin\Debug\net6.0\Core.dll
+C:\Users\Farexy\Documents\GitHub\dotnet-project\BLL.Abstractions\bin\Debug\net6.0\Core.pdb
+C:\Users\Farexy\Documents\GitHub\dotnet-project\BLL.Abstractions\obj\Debug\net6.0\BLL.Abstractions.csproj.AssemblyReference.cache
+C:\Users\Farexy\Documents\GitHub\dotnet-project\BLL.Abstractions\obj\Debug\net6.0\BLL.Abstractions.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Farexy\Documents\GitHub\dotnet-project\BLL.Abstractions\obj\Debug\net6.0\BLL.Abstractions.AssemblyInfoInputs.cache
+C:\Users\Farexy\Documents\GitHub\dotnet-project\BLL.Abstractions\obj\Debug\net6.0\BLL.Abstractions.AssemblyInfo.cs
+C:\Users\Farexy\Documents\GitHub\dotnet-project\BLL.Abstractions\obj\Debug\net6.0\BLL.Abstractions.csproj.CoreCompileInputs.cache
+C:\Users\Farexy\Documents\GitHub\dotnet-project\BLL.Abstractions\obj\Debug\net6.0\BLL.Abstractions.csproj.CopyComplete
+C:\Users\Farexy\Documents\GitHub\dotnet-project\BLL.Abstractions\obj\Debug\net6.0\BLL.Abstractions.dll
+C:\Users\Farexy\Documents\GitHub\dotnet-project\BLL.Abstractions\obj\Debug\net6.0\BLL.Abstractions.pdb
+C:\Users\Farexy\Documents\GitHub\dotnet-project\BLL.Abstractions\obj\Debug\net6.0\ref\BLL.Abstractions.dll
+C:\Users\Farexy\Documents\GitHub\dotnet-project\BLL.Abstractions\bin\Debug\net6.0\ref\BLL.Abstractions.dll
