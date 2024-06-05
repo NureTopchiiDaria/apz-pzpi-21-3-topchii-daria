@@ -53,6 +53,44 @@ namespace BLL.Services
             };
         }
 
+        public async Task<DistanceAndSpeedDto> GetTotalDistanceAndAverageSpeed(Guid userId, Guid roomId)
+        {
+            var conditions = new Expression<Func<TrackingDataModel, bool>>[]
+            {
+                td => td.UserId == userId && td.RoomId == roomId,
+            };
+            var trackingDataList = await this.trackingDataStorage.GetByConditions(conditions);
+
+            if (trackingDataList == null || trackingDataList.Count() < 2)
+            {
+                return new DistanceAndSpeedDto
+                {
+                    TotalDistance = 0.0,
+                    AverageSpeed = 0.0,
+                };
+            }
+
+            double totalDistance = 0.0;
+            var orderedTrackingDataList = trackingDataList.OrderBy(td => td.Timestamp).ToList();
+
+            for (int i = 0; i < orderedTrackingDataList.Count - 1; i++)
+            {
+                var startPoint = orderedTrackingDataList[i].Location;
+                var endPoint = orderedTrackingDataList[i + 1].Location;
+
+                totalDistance += this.GetHaversineDistance(startPoint.X, startPoint.Y, endPoint.X, endPoint.Y);
+            }
+
+            var timeSpan = orderedTrackingDataList.Last().Timestamp - orderedTrackingDataList.First().Timestamp;
+            double averageSpeed = totalDistance / timeSpan.TotalHours;
+
+            return new DistanceAndSpeedDto
+            {
+                TotalDistance = totalDistance,
+                AverageSpeed = averageSpeed,
+            };
+        }
+
         public async Task<TrackingDataModel> AddTrackingData(TrackingDataModel trackingData)
         {
             await this.trackingDataStorage.Create(trackingData);
@@ -112,6 +150,26 @@ namespace BLL.Services
                 AveragePulse = averagePulse,
                 Locations = locations,
             };
+        }
+
+#pragma warning disable CA1704
+        private double GetHaversineDistance(double lon1, double lat1, double lon2, double lat2)
+#pragma warning restore CA1704
+        {
+            const double R = 6371.0;
+            double dLat = this.ToRadians(lat2 - lat1);
+            double dLon = this.ToRadians(lon2 - lon1);
+
+            double a = (Math.Sin(dLat / 2) * Math.Sin(dLat / 2)) +
+                       (Math.Cos(this.ToRadians(lat1)) * Math.Cos(this.ToRadians(lat2)) *
+                        Math.Sin(dLon / 2) * Math.Sin(dLon / 2));
+            double c = 2 * Math.Atan2(Math.Sqrt(a), Math.Sqrt(1 - a));
+            return R * c;
+        }
+
+        private double ToRadians(double angle)
+        {
+            return angle * (Math.PI / 180.0);
         }
     }
 }
